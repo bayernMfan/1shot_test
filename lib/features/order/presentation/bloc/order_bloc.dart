@@ -40,7 +40,7 @@ class OrderBloc extends Bloc<OrderEvent, OrderState> {
       orderRepository.getRandomMerch(examples);
 
   List<Merch> generateRandomMerches(List<Merch> examples) {
-    int count = new Random().nextInt(9000) + 1000;
+    int count = new Random().nextInt(90000) + 10000;
     orderRepository.fillRandomMerches(count, examples);
     return orderRepository.randomMerchandises;
   }
